@@ -5,11 +5,11 @@ import { BigNumber } from "ethers";
 
 // describe("SimpleStorage", () => {})
 describe("SimpleStorage", function () {
-  // let simpleStorageFactory
-  // let simpleStorage
+  // Made simpleStorageFactory and simpleStorage types imported from typechain-types
   let simpleStorageFactory: SimpleStorage__factory 
   let simpleStorage: SimpleStorage
 
+  // Runs before each of the unit test
   beforeEach(async function () {
     simpleStorageFactory = (await ethers.getContractFactory("SimpleStorage")) as SimpleStorage__factory
     simpleStorage = await simpleStorageFactory.deploy()
