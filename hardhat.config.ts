@@ -5,6 +5,7 @@ import "./tasks/blocknumber"
 import "@nomiclabs/hardhat-etherscan"
 import "solidity-coverage"
 import "@nomiclabs/hardhat-ethers"
+import "@typechain/hardhat"
 
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 const RINKEBY_API_KEY_URL = process.env.RINKEBY_API_KEY_URL || ""
