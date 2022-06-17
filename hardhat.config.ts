@@ -1,9 +1,10 @@
-require("@nomiclabs/hardhat-waffle");
-require("dotenv").config({ path: ".env" });
-require("hardhat-gas-reporter")
-require("./tasks/blocknumber")
-require("@nomiclabs/hardhat-etherscan")
-require("solidity-coverage")
+import "@nomiclabs/hardhat-waffle"
+import "dotenv/config" 
+import "hardhat-gas-reporter"
+import "./tasks/blocknumber"
+import "@nomiclabs/hardhat-etherscan"
+import "solidity-coverage"
+import "@nomiclabs/hardhat-ethers"
 
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 const RINKEBY_API_KEY_URL = process.env.RINKEBY_API_KEY_URL || ""
